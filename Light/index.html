@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tinkercad IoT Simulation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+<nav>
+<img src="images/menu.png" class="menu-img">
+<img src="images/logo.png" class="logo">
+<ul>
+
+<li><a href="">Latest</a></li>
+<li><a href="">Moder</a></li>
+<li><a href="">Contemproray</a></li>
+<li><a href="">Affordable</a></li>
+
+</ul>
+<button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+</nav>
+
+
+<div class="lamp-container">
+<img src="images/lamp.png" class="lamp">
+<img src="images/light.png" class="light" id="light">
+<img src="images/light.png" class="light" id="light1">
+<img src="images/light.png" class="light" id="light2">
+</div>
+
+
+<div class="text-container">
+<h1>Turn on the <br> Lighting</h1>
+
+
+
+<div class="btnss">      
+      <button onclick="toggleOn()" id="popup-on">Light ON</button>
+      <button onclick="toggleOff()" id="popup-off">Light OFF</button>    
+</div>
+
+<a href="">View Analytics</a>
+
+
+
+
+<div class="control">
+<p>ON</p>
+<div class="line"><span></span></div>
+<p>OFF</p>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+<div class="footerr">Powered and Owned <br> © All rights reserved by Venugopal Pudur</div>
+
+  </footer>
+
+
+
+
+
+
+
+<script>
+var light1=document.getElementById("light1");
+
+function toggleOn(){
+light1.classList.toggle("on");
+}
+
+</script>
+
+
+<script>
+var light1=document.getElementById("light1");
+
+function toggleOff(){
+light1.classList.toggle("on");
+}
+
+</script>
+
+<script>
+var btn=document.getElementById("btn");
+var light=document.getElementById("light");
+
+function toggleBtn(){
+btn.classList.toggle("active");
+light.classList.toggle("on");
+}
+
+
+
+</script>
+
+</body>
+
+
+
+<div class="popup center">
+
+<div id="content">
+<img src = "216721_signal_icon.svg" class="ribbon" alt="Signal" align="right" style ="width:20px"/>
+</div>
+
+<div id="content1">
+<img src = "battery-full-svgrepo-com.svg" class="ribbon1" alt="Battery" align="right" style ="width:20px"/>
+</div>
+
+
+<div class="dots" align="left">
+  <span class="dot1"></span>
+  <span class="dot2"></span>
+  <span class="dot3"></span>
+</div>
+
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+<p><span id='date-time'></span>.</p>
+<script>
+var dt = new Date();
+document.getElementById('date-time').innerHTML=dt;
+</script>  
+
+  <div class="icon">
+    <i class="fa fa-check"></i>
+  </div>
+  <div class="title">
+    Success!!
+  </div>
+  <div class="description">
+    Hello Venugopal, Welcome to the IoT home Automation. your request has been initiated and Light is Operationalised. 
+  </div>
+
+  <div class="dismiss-btn">
+    <button id="dismiss-popup-btn">
+      Ok
+    </button>
+  </div>
+</div>
+
+
+
+<script src="test.js">
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
